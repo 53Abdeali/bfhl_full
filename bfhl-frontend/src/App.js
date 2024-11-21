@@ -21,7 +21,7 @@ const App = () => {
       if (!parsedInput.data) {
         throw new Error("JSON must include a 'data' key.");
       }
-      const res = await axios.post("http://localhost:8080/bfhl", parsedInput); // Update with your backend URL
+      const res = await axios.post("https://bfhl-full-4.onrender.com/bfhl", parsedInput); // Update with your backend URL
       setResponse(res.data);
       setError("");
     } catch (err) {
